@@ -14,3 +14,4 @@ for (let n = 0; n<16; n++) {
 
 let grid = document.querySelectorAll('.gridBox');
 grid.forEach((element) => element.addEventListener('mouseover', () => element.style.borderColor = 'red'))
+grid.forEach((element) => element.addEventListener('mouseout', () => element.style.borderColor = 'black'))
