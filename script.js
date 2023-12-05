@@ -1,5 +1,14 @@
 const container = document.querySelector('#container');
 
+let R = Math.floor(Math.random() * 256).toString;
+
+function randomRGB() {
+    let R = Math.floor(Math.random() * 256);
+    let G = Math.floor(Math.random() * 256);
+    let B = Math.floor(Math.random() * 256);
+    return 'rgb(' + R.toString() + ' ' + G.toString() + ' ' + B.toString() + ')';
+}
+
 function makeGrid (gridSize) {
     while (container.firstChild) {
         container.removeChild(container.lastChild);
@@ -19,8 +28,7 @@ function makeGrid (gridSize) {
         }
     }
     let grid = document.querySelectorAll('.gridBox');
-    grid.forEach((element) => element.addEventListener('mouseover', () => element.style.backgroundColor = 'red'))
-    grid.forEach((element) => element.addEventListener('mouseout', () => element.style.borderColor = 'black'))
+    grid.forEach((element) => element.addEventListener('mouseover', () => element.style.backgroundColor = randomRGB()))
 }
 
 makeGrid(22);
