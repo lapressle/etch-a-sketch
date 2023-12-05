@@ -19,13 +19,11 @@ button {
     padding: 0px;
     margin: 0px;
     display: flex;
-    flex: 1 1 0
+    flex: 1 1 0;
 }
 
 .gridLine{
     display: flex;
-    flex: 1 0 auto;
+    flex: 1 0 0;
     max-width: 960px;
-    margin: auto;
-    justify-content: center;
 }

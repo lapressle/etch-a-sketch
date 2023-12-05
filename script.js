@@ -10,9 +10,8 @@ function makeGrid (gridSize) {
         let setHeight = 960/gridSize;
         let setWidth = 960/gridSize;
         gridLine.style.minHeight = setHeight+'px';
-        gridLine.style.minWidth = setHeight+'px';
         container.appendChild(gridLine);
-        for (let i = 0; i<16; i++) {
+        for (let i = 0; i<gridSize; i++) {
             let gridBox = document.createElement('div');
             gridBox.classList.add('gridBox');
             gridLine.appendChild(gridBox)
