@@ -1,8 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+#container {
+    width: 960px;
+    margin: auto;
+}
+
 .gridBox {
-    border: 5px solid black;
-    margin: 10px;
+    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex: 1 1 0
 }
 
 .gridLine{
     display: flex;
+    flex: 1 0 auto;
+    max-width: 960px;
+    margin: auto;
+    justify-content: center;
 }
