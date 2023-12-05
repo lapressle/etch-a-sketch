@@ -28,7 +28,3 @@ makeGrid(22);
 const gridButton = document.querySelector('button');
 
 gridButton.addEventListener('click', () => makeGrid(prompt('What size would you like?')));
-
-let grid = document.querySelectorAll('.gridBox');
-grid.forEach((element) => element.addEventListener('mouseover', () => element.style.backgroundColor = 'red'))
-grid.forEach((element) => element.addEventListener('mouseout', () => element.style.borderColor = 'black'))
