@@ -36,7 +36,7 @@ function makeGrid (gridSize) {
 
 }
 
-makeGrid(22);
+makeGrid(16);
 
 const gridButton = document.querySelector('button');
 
